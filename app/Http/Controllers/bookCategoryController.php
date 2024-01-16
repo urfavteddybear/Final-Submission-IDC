@@ -22,7 +22,18 @@ class bookCategoryController extends Controller
         bookCategory::create([
             'category'=> $request->category,
         ]);
-        return response()->json('Data Added Successfully');
+        return response()->json('Data Added Successfully')  ;
     }
+
+    public function show($id)
+    {
+        $data = bookCategory::find($id);
+        if (!$data) {
+            return response()->json(['error' => 'Data not found'], 404);
+        }
+        return response()->json($data->toArray());
+    }
+
+    
 }
 

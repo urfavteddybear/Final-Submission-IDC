@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreBookCategoryRequest;
+use App\Http\Requests\updateBookCategoryRequest;
 use App\Models\bookCategory;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Response;
@@ -34,6 +35,13 @@ class bookCategoryController extends Controller
         return response()->json($data->toArray());
     }
 
-    
+    public function update(updateBookCategoryRequest $request, $id)
+    {
+        bookCategory::where('id', $id)->update([
+            'category'=> $request->category,
+        ]);
+        return response()->json('Data Updated Successfully')  ;
+    }
+
 }
 

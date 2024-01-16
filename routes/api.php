@@ -26,6 +26,7 @@ Route::prefix('bookCategory')
         Route::get('/', [bookCategoryController::class, 'index'])->name('index');
         Route::post('/', [bookCategoryController::class, 'store'])->name('store');
         Route::get('/{bookCategory}', [bookCategoryController::class, 'show'])->name('show');
+        Route::put('/{bookCategory}', [BookCategoryController::class, 'update'])->name('update');
     });
 
 Route::prefix('Book')

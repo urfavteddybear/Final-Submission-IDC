@@ -22,6 +22,7 @@ class bookCategoryController extends Controller
         bookCategory::create([
             'category'=> $request->category,
         ]);
+        return response()->json('Data Added Successfully');
     }
 }
 

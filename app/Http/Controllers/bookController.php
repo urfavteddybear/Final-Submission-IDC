@@ -55,4 +55,14 @@ class bookController extends Controller
         ]);
         return response()->json('Data Updated Successfully');
     }
+
+    public function destroy(Book $book, $id)
+    {
+        $book = Book::find($id);
+        if (!$book) {
+            return response()->json('Data not found', 404);
+        }
+        $book->delete();
+        return response()->json('Data Deleted Successfully');
+    }
 }

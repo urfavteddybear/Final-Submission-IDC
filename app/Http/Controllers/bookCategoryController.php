@@ -46,5 +46,16 @@ class bookCategoryController extends Controller
         ]);
         return response()->json('Data Updated Successfully');
     }
+
+    public function destroy(bookCategory $bookCategory, $id)
+    {
+        $bookCategory = bookCategory::find($id);
+        if (!$bookCategory) {
+            return response()->json('Data not found', 404);
+        }
+        $bookCategory->delete();
+        return response()->json('Data Deleted Successfully');
+    }
+
 }
 

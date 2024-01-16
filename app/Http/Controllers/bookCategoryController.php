@@ -37,11 +37,14 @@ class bookCategoryController extends Controller
 
     public function update(updateBookCategoryRequest $request, $id)
     {
-        bookCategory::where('id', $id)->update([
-            'category'=> $request->category,
+        $bookCategory = bookCategory::find($id);
+        if (!$bookCategory) {
+            return response()->json('Data not found', 404);
+        }
+        $bookCategory->update([
+            'category' => $request->category,
         ]);
-        return response()->json('Data Updated Successfully')  ;
+        return response()->json('Data Updated Successfully');
     }
-
 }
 

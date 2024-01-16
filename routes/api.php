@@ -34,4 +34,5 @@ Route::prefix('Book')
     ->name('Book')
     ->group(function () {
         Route::get('/', [bookController::class, 'index'])->name('index');
+        Route::post('/', [bookController::class, 'store'])->name('store');
     });

@@ -24,7 +24,7 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
-        User::factory()->count(100)->create();
-        bookCategory::factory()->has(Book::factory()->count(1))->count(100)->create();
+        User::factory()->count(10)->create();
+        bookCategory::factory()->has(Book::factory()->count(500))->count(10)->create();
     }
 }

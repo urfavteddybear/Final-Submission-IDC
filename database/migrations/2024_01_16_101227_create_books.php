@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string("book_name");
             $table->string("description");
-            $table->string("category_id");
+            $table->foreignId("category_id")->references('id')->on('book_category')->onDelete('cascade');
             $table->boolean("is_deleted");
             $table->timestamps();
         });

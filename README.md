@@ -8,13 +8,13 @@
 - 200 `OK` - Request was successful
 - 404 `Not Found` - Requested data was not found
 ## 📚 Books Attributes
-- id `integer` : Unique identifier ( Primary Key )
-- book_name `string` : Book Name
-- description `string` : Book Description
-- category_id `integer` : Book Category ( Foreign Key )
+- id `BIGINT` : Unique identifier ( Primary Key )
+- book_name `varchar` : Book Name
+- description `varchar` : Book Description
+- category_id `BIGINT` : Book Category ( Foreign Key )
 ## ✍ bookCategory Attributes
-- id `integer` : Unique identifier ( Primary Key )
-- category `string` : Category Name
+- id `BIGINT` : Unique identifier ( Primary Key )
+- category `varchar` : Category Name
 ## 🔖 GET Method Example
 ### Getting all data
 #### Book URL : 

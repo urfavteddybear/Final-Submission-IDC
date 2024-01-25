@@ -168,4 +168,4 @@ http://localhost:8000/api/Book/{id}
 http://localhost:8000/api/bookCategory/{id}
 ```
 ## 🤯 Entity Relational Diagram ( ERD )
-![Screenshot 2024-01-21 212421](https://github.com/urfavteddybear/Final-Submission-IDC/assets/97431620/7f38c334-2000-4256-8f59-c646d485cad3)
+![image](https://github.com/urfavteddybear/Final-Submission-IDC/assets/97431620/0aa2de4c-7850-4ba9-8295-a64bd821a837)

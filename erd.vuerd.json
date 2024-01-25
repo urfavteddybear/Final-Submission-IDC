@@ -117,31 +117,8 @@
             }
           },
           {
-            "id": "2b5cd1f5-1add-4b3f-a5e8-5532e88ee241",
-            "name": "category_id",
-            "comment": "",
-            "dataType": "BIGINT",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": true
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": false,
-              "pfk": false,
-              "widthName": 69.208984375,
-              "widthComment": 60,
-              "widthDataType": 60,
-              "widthDefault": 60
-            }
-          },
-          {
             "id": "e3963b58-7555-46d1-b227-d6b18db771c5",
-            "name": "id",
+            "name": "category_id",
             "comment": "",
             "dataType": "BIGINT",
             "default": "",
@@ -156,7 +133,7 @@
               "pk": false,
               "fk": true,
               "pfk": false,
-              "widthName": 60,
+              "widthName": 69.208984375,
               "widthComment": 60,
               "widthDataType": 60,
               "widthDefault": 60
@@ -164,10 +141,10 @@
           }
         ],
         "ui": {
-          "active": false,
+          "active": true,
           "left": 79.1664,
           "top": 104.1666,
-          "zIndex": 89,
+          "zIndex": 6,
           "widthName": 60,
           "widthComment": 60
         },
@@ -229,7 +206,7 @@
           "active": false,
           "left": 574.1659,
           "top": 289.9997,
-          "zIndex": 90,
+          "zIndex": 2,
           "widthName": 87.28076171875,
           "widthComment": 60
         },
@@ -263,7 +240,7 @@
             "e3963b58-7555-46d1-b227-d6b18db771c5"
           ],
           "x": 474.66591171875,
-          "y": 189.91660000000002,
+          "y": 179.66660000000002,
           "direction": "right"
         },
         "constraintName": "fk_book_category_to_books",

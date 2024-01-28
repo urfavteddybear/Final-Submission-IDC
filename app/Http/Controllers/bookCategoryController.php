@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreBookCategoryRequest;
+use App\Http\Requests\storeBookCategoryRequest;
 use App\Http\Requests\updateBookCategoryRequest;
 use App\Models\bookCategory;
 use Illuminate\Http\Request;
@@ -18,7 +18,7 @@ class bookCategoryController extends Controller
         return Response($show_category, 200);
     }
 
-    public function store(StoreBookCategoryRequest $request)
+    public function store(storeBookCategoryRequest $request)
     {
         bookCategory::create([
             'category'=> $request->category,
